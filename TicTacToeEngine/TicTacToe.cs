@@ -57,6 +57,8 @@ namespace TicTacToeEngine
                     tempPos++;
                     if(position == tempPos)
                     {
+                        if (GameGrid[row][column] != Players.NONE)
+                            throw new Exception("Already occupied");
                         GameGrid[row][column] = player;
                     }                    
                 }
@@ -173,6 +175,32 @@ namespace TicTacToeEngine
             }
 
             return Players.NONE;
+        }
+
+        public double[] GetGridAsSingleTable(Players currentPlayer)
+        {
+            if (currentPlayer == Players.NONE)
+                throw new Exception("You cannot get the NONE PLAYER");
+
+            double[] newTable = new double[GameGrid.Length * GameGrid.Length * 2];
+            var index = -1;
+            for (int column = 0; column < GameGrid.Length; column++)
+            {
+                for (var row = 0; row < GameGrid[column].Length; row++)
+                {
+                    index++;
+                    if(GameGrid[row][column] != Players.NONE)
+                    {
+                        if (GameGrid[row][column] == currentPlayer)
+                            newTable[index] = 1;
+                        else
+                            newTable[index + GameGrid.Length * GameGrid.Length] = 1;
+                    }
+                    //newTable[index] = currentPlayer == GameGrid[row][column]?1:0;
+                }
+            }
+
+            return newTable;
         }
 
 
