@@ -1,0 +1,14 @@
+C:\Users\vince\Downloads\Article_src\NeuralXOR\NeuralXOR\bin\Debug\NeuralXOR.exe.config
+C:\Users\vince\Downloads\Article_src\NeuralXOR\NeuralXOR\bin\Debug\NeuralXOR.exe
+C:\Users\vince\Downloads\Article_src\NeuralXOR\NeuralXOR\bin\Debug\NeuralXOR.pdb
+C:\Users\vince\Downloads\Article_src\NeuralXOR\NeuralXOR\obj\Debug\NeuralXOR.csprojAssemblyReference.cache
+C:\Users\vince\Downloads\Article_src\NeuralXOR\NeuralXOR\obj\Debug\NeuralXOR.csproj.CoreCompileInputs.cache
+C:\Users\vince\Downloads\Article_src\NeuralXOR\NeuralXOR\obj\Debug\NeuralXOR.exe
+C:\Users\vince\Downloads\Article_src\NeuralXOR\NeuralXOR\obj\Debug\NeuralXOR.pdb
+E:\AI\NeuralXOR\NeuralXOR\bin\Debug\NeuralXOR.exe.config
+E:\AI\NeuralXOR\NeuralXOR\bin\Debug\NeuralXOR.exe
+E:\AI\NeuralXOR\NeuralXOR\bin\Debug\NeuralXOR.pdb
+E:\AI\NeuralXOR\NeuralXOR\obj\Debug\NeuralXOR.csprojAssemblyReference.cache
+E:\AI\NeuralXOR\NeuralXOR\obj\Debug\NeuralXOR.csproj.CoreCompileInputs.cache
+E:\AI\NeuralXOR\NeuralXOR\obj\Debug\NeuralXOR.exe
+E:\AI\NeuralXOR\NeuralXOR\obj\Debug\NeuralXOR.pdb

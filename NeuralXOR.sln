@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralXOR", "NeuralXOR\NeuralXOR.csproj", "{C6D9EA28-FE0C-4D0E-94D0-7121819A6527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeAI", "TicTacToeAI\TicTacToeAI.csproj", "{642F7E22-5753-47B9-8CC4-B3DB57F17DDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeEngine", "TicTacToeEngine\TicTacToeEngine.csproj", "{7D5EABC2-17AF-48B1-A7AF-0CAC24A4BA3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6D9EA28-FE0C-4D0E-94D0-7121819A6527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D9EA28-FE0C-4D0E-94D0-7121819A6527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D9EA28-FE0C-4D0E-94D0-7121819A6527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D9EA28-FE0C-4D0E-94D0-7121819A6527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{642F7E22-5753-47B9-8CC4-B3DB57F17DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{642F7E22-5753-47B9-8CC4-B3DB57F17DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{642F7E22-5753-47B9-8CC4-B3DB57F17DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{642F7E22-5753-47B9-8CC4-B3DB57F17DDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D5EABC2-17AF-48B1-A7AF-0CAC24A4BA3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D5EABC2-17AF-48B1-A7AF-0CAC24A4BA3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D5EABC2-17AF-48B1-A7AF-0CAC24A4BA3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D5EABC2-17AF-48B1-A7AF-0CAC24A4BA3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC4AD919-2910-4100-800B-3F53E1D1DA60}
+	EndGlobalSection
+EndGlobal

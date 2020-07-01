@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "TicTacToeAI/1.0.0": {
+        "dependencies": {
+          "TicTacToeEngine": "1.0.0"
+        },
+        "runtime": {
+          "TicTacToeAI.dll": {}
+        }
+      },
+      "TicTacToeEngine/1.0.0": {
+        "runtime": {
+          "TicTacToeEngine.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TicTacToeAI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TicTacToeEngine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

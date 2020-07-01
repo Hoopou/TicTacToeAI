@@ -1,0 +1,9 @@
+E:\AI\NeuralXOR\TicTacToeEngine\bin\Debug\netcoreapp3.1\TicTacToeEngine.deps.json
+E:\AI\NeuralXOR\TicTacToeEngine\bin\Debug\netcoreapp3.1\TicTacToeEngine.dll
+E:\AI\NeuralXOR\TicTacToeEngine\bin\Debug\netcoreapp3.1\TicTacToeEngine.pdb
+E:\AI\NeuralXOR\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.csprojAssemblyReference.cache
+E:\AI\NeuralXOR\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.AssemblyInfoInputs.cache
+E:\AI\NeuralXOR\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.AssemblyInfo.cs
+E:\AI\NeuralXOR\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.csproj.CoreCompileInputs.cache
+E:\AI\NeuralXOR\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.dll
+E:\AI\NeuralXOR\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.pdb

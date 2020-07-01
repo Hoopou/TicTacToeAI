@@ -1,0 +1,16 @@
+E:\AI\NeuralXOR\TicTacToeAI\bin\Debug\netcoreapp3.1\TicTacToeAI.exe
+E:\AI\NeuralXOR\TicTacToeAI\bin\Debug\netcoreapp3.1\TicTacToeAI.deps.json
+E:\AI\NeuralXOR\TicTacToeAI\bin\Debug\netcoreapp3.1\TicTacToeAI.runtimeconfig.json
+E:\AI\NeuralXOR\TicTacToeAI\bin\Debug\netcoreapp3.1\TicTacToeAI.runtimeconfig.dev.json
+E:\AI\NeuralXOR\TicTacToeAI\bin\Debug\netcoreapp3.1\TicTacToeAI.dll
+E:\AI\NeuralXOR\TicTacToeAI\bin\Debug\netcoreapp3.1\TicTacToeAI.pdb
+E:\AI\NeuralXOR\TicTacToeAI\bin\Debug\netcoreapp3.1\TicTacToeEngine.dll
+E:\AI\NeuralXOR\TicTacToeAI\bin\Debug\netcoreapp3.1\TicTacToeEngine.pdb
+E:\AI\NeuralXOR\TicTacToeAI\obj\Debug\netcoreapp3.1\TicTacToeAI.csprojAssemblyReference.cache
+E:\AI\NeuralXOR\TicTacToeAI\obj\Debug\netcoreapp3.1\TicTacToeAI.AssemblyInfoInputs.cache
+E:\AI\NeuralXOR\TicTacToeAI\obj\Debug\netcoreapp3.1\TicTacToeAI.AssemblyInfo.cs
+E:\AI\NeuralXOR\TicTacToeAI\obj\Debug\netcoreapp3.1\TicTacToeAI.csproj.CoreCompileInputs.cache
+E:\AI\NeuralXOR\TicTacToeAI\obj\Debug\netcoreapp3.1\TicTacToeAI.csproj.CopyComplete
+E:\AI\NeuralXOR\TicTacToeAI\obj\Debug\netcoreapp3.1\TicTacToeAI.dll
+E:\AI\NeuralXOR\TicTacToeAI\obj\Debug\netcoreapp3.1\TicTacToeAI.pdb
+E:\AI\NeuralXOR\TicTacToeAI\obj\Debug\netcoreapp3.1\TicTacToeAI.genruntimeconfig.cache
