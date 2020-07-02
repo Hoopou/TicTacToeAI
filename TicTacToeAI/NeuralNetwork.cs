@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Text.Json.Serialization;
 
 public class NeuralNetwork
 {
@@ -16,14 +17,15 @@ public class NeuralNetwork
         }
     }
 
-    ReadOnlyCollection<UInt32> TheTopology; // Contains the topology of the NeuralNetwork
-    NeuralSection[] Sections; // Contains the all the sections of the NeuralNetwork
+    public ReadOnlyCollection<UInt32> TheTopology  { get; set; } // Contains the topology of the NeuralNetwork
 
-    Random TheRandomizer; // It is the Random instance used to mutate the NeuralNetwork
+    public NeuralSection[] Sections { get; set; } // Contains the all the sections of the NeuralNetwork
 
-    private class NeuralSection
+    public Random TheRandomizer { get; set; } // It is the Random instance used to mutate the NeuralNetwork
+
+    public class NeuralSection
     {
-        private double[][] Weights; // Contains all the weights of the section where [i][j] represents the weight from neuron i in the input layer and neuron j in the output layer
+        public double[][] Weights; // Contains all the weights of the section where [i][j] represents the weight from neuron i in the input layer and neuron j in the output layer
 
         private Random TheRandomizer; // Contains a reference to the Random instance of the NeuralNetwork
 

@@ -19,8 +19,10 @@ namespace TicTacToeAI
             int Iteration = 0; // Current Training Iteration
 
             NeuralNetwork BestNetwork = new NeuralNetwork(new uint[] { 18, 9, 9 }); // The best network currently made
+            var BestNetworkErrorCount = int.MaxValue;
 
-            
+
+
 
             while (true) // Keep Training forever
             {
@@ -53,8 +55,10 @@ namespace TicTacToeAI
                 var AIplayer2 = new NeuralNetwork(BestNetwork);
 
                 var game = new TicTacToe(GRID_SIZE);
+                var errorCount = 0;
+                var errorCountPlayer2 = 0;
 
-                AIplayer1.Mutate();
+                //AIplayer1.Mutate();
                 AIplayer2.Mutate();
 
                 while (!game.IsGameFinished())
@@ -74,6 +78,7 @@ namespace TicTacToeAI
                         }
                         catch (Exception)
                         {
+                            errorCount++;
                             AIplayer1.Mutate();
                         }
                     } while (!IsLegalMoove);
@@ -99,6 +104,7 @@ namespace TicTacToeAI
                         }
                         catch (Exception)
                         {
+                            errorCountPlayer2++;
                             AIplayer2.Mutate();
                         }
                     } while (!IsLegalMoove);
@@ -111,12 +117,20 @@ namespace TicTacToeAI
                     {
                         case Players.Player1:
                             Console.WriteLine("Iteration: " + Iteration + " - The player 1 wins the game");
-                            BestNetwork = AIplayer1;
+                            //if (errorCount <= BestNetworkErrorCount)
+                            //{
+                                BestNetwork = AIplayer1;
+                                BestNetworkErrorCount = errorCount;
+                            //}
                             break;
                         case Players.Player2:
                             Console.WriteLine("Iteration: " + Iteration + " - The player 2 wins the game");
-                            BestNetwork = AIplayer2;
-                            break;
+                            //if (errorCountPlayer2 <= BestNetworkErrorCount)
+                            //{
+                                BestNetwork = AIplayer2;
+                                BestNetworkErrorCount = errorCount;
+                            //}
+                        break;
                         case Players.NONE:
                             Console.WriteLine("Iteration: " + Iteration + " - The game is NULL");
                         break;
@@ -134,21 +148,26 @@ namespace TicTacToeAI
 
                 //Console.WriteLine(output.ToString());
 
-               
-
-                if(Iteration % 10 == 0)
+                if (Iteration % 100 == 0)
                 {
-                    //Directory.CreateDirectory(OUTPUT_DIRECTORY);
-                    //File.AppendAllText(OUTPUT_DIRECTORY + "\\" + DateTime.Now.ToString("YYYY-MM-DD hh-mm-ss") + " Iteration " + Iteration + ".json", JsonConvert.SerializeObject(BestNetwork));
+                    Directory.CreateDirectory(OUTPUT_DIRECTORY);
+                    File.AppendAllText(OUTPUT_DIRECTORY + "\\" + DateTime.Now.ToString("yyyy-MM-dd hh-mm-ss") + "_Iteration_" + Iteration + "_.json", JsonConvert.SerializeObject(BestNetwork));
+                    Directory.CreateDirectory(OUTPUT_DIRECTORY + "\\games");
+                    File.AppendAllText(OUTPUT_DIRECTORY + "\\games\\" + DateTime.Now.ToString("yyyy-MM-dd hh-mm-ss") + "_Iteration_" + Iteration + "_.txt", "Error count: " + errorCount + "\n" + game.GetGameString());
+
 
                     Console.Clear();
                     Console.WriteLine("Iteration: " + Iteration);
                     Console.WriteLine("WINNER: " + winner.ToString());
                     Console.WriteLine(game.GetGameString());
 
+                    
+                }
+
+                if (Iteration % 10000 == 0)
+                {
                     Console.WriteLine("Pressa any key to continue!");
                     Console.ReadLine();
-
                 }
 
             }
