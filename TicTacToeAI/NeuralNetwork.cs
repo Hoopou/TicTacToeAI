@@ -145,10 +145,11 @@ public class NeuralNetwork
         /// <returns>x after it is put through ReLU.</returns>
         private double ReLU(double x)
         {
-            if (x >= 0)
-                return x;
-            else
-                return x / 20;
+            return 1.0f / (1.0f + (float)Math.Exp(-x));
+            //if (x >= 0)
+            //    return x;
+            //else
+            //    return Math.Abs(x / 20);
         }
     }
 
