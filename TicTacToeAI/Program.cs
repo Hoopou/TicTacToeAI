@@ -20,8 +20,6 @@ namespace TicTacToeAI
         {
             _BestNetwork = new NeuralNetwork(new uint[] { 18, 13, 9 }); // The best network currently made
 
-
-
             CustomConsoleMenu menu = new CustomConsoleMenu();
             menu.AddChoice(0, "Train Network 10 times");
             menu.AddChoice(2, "Train Network X times");
@@ -38,8 +36,6 @@ namespace TicTacToeAI
                 Console.WriteLine("Press any key to continue");
                 Console.ReadLine();
             }
-
-
         }
 
         private static void Menu_ChoiceSelection(object sender, ChoiceSelectionArgs e)
@@ -82,7 +78,6 @@ namespace TicTacToeAI
         {
             var game = new TicTacToe(GRID_SIZE);
             var AIplayer1 = new NeuralNetwork(network);
-            var AIErrorCount = 0;
 
             while (!game.IsGameFinished())
             {
@@ -104,8 +99,7 @@ namespace TicTacToeAI
             }
 
             if(game.VerifyWinner() != Players.NONE)
-            {
-                
+            {                
                 Console.WriteLine(game.VerifyWinner() + " wins!");
             }
 
@@ -121,34 +115,8 @@ namespace TicTacToeAI
 
 
 
-            while (Iteration <= numberOfTimes) // Keep Training forever
-            {
-                /*
-                 *      
-                 *      1: Initialiser le joueur1 et le joueur 2 avec le best AI
-                 *      2: mutate player 1 et player 2
-                 *      3: Initialiser partie
-                 *      
-                 *      Tant que la partie n'est pas terminer 
-                 *              Tant que le joueur 1 n'a pas jouer un moove légal
-                 *                      Player1 jouer moove
-                 *              Fin de Tant que
-                 *              
-                 *              Tant que le joueur 2 n'a pas jouer un moove légal
-                 *                      Player2 jouer moove
-                 *              Fin de Tant que
-                 *      Fin tant que
-                 *      
-                 *      Si un joueur a gagner : mettre bestNetwork a ce joueur
-                 *      
-                 *      
-                 * 
-                 * 
-                 * 
-                 * 
-                 */
-
-                
+            while (Iteration <= numberOfTimes) // Keep Training untill the number of times is reached
+            {               
 
                 var game = new TicTacToe(GRID_SIZE);
 
@@ -167,15 +135,10 @@ namespace TicTacToeAI
                     //For player 1
                     certaintyPlayer1 = AIPlayMoove(AIplayer1, game, Players.Player1);
 
-
                     if (game.IsGameFinished())
                         break;
 
-                    //Console.WriteLine("The player 1 play the move:");
-                    //game.PrintTable();
-                    //Console.ReadLine();
-
-                    //For player 2
+                    //Player 2
                     certaintyPlayer2 = AIPlayMoove(AIplayer2, game, Players.Player2);
 
                 }
@@ -196,22 +159,8 @@ namespace TicTacToeAI
                         break;
                     case Players.NONE:
                         Console.WriteLine("Iteration: " + Iteration + "/" + numberOfTimes + " - The game is NULL");
-                        //if(errorPlayer1<= errorPlayer2)
-                        //{
-                        //    BestNetwork = AIplayer1;
-                        //    _BestNetworkErrorCount = errorPlayer1;
-                        //}
-                        //else
-                        //{
-                        //    BestNetwork = AIplayer2;
-                        //    _BestNetworkErrorCount = errorPlayer2;
-                        //}
                         break;
                 }
-
-
-
-                // An iteration is done
                 Iteration++;
 
                 //    TicTacToeEngine.TicTacToe tic = new TicTacToeEngine.TicTacToe(3);
@@ -328,7 +277,6 @@ namespace TicTacToeAI
             game.PrintTable();
 
             Console.WriteLine("Valid moove");
-            //Console.ReadLine();
         }
 
         private static void saveNetwork(string fileName, NeuralNetwork network)
