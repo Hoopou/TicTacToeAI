@@ -148,17 +148,17 @@ namespace TicTacToeAI
                 switch (winner)
                 {
                     case Players.Player1:
-                            Console.WriteLine("Iteration: " + Iteration + "/"+ numberOfTimes+" - The player 1 wins the game " + certaintyPlayer1);
+                            Console.WriteLine("Iteration: " + Iteration + "/"+ numberOfTimes+" (" + ((double)Iteration/numberOfTimes*100).ToString("0.00") + "%) - The player 1 wins the game ");
                             //BestNetwork = AIplayer1;
                             mutateAmount = 1 - certaintyPlayer2;
                         break;
                     case Players.Player2:
-                            Console.WriteLine("Iteration: " + Iteration + "/" + numberOfTimes + " - The player 2 wins the game " + certaintyPlayer2);
+                            Console.WriteLine("Iteration: " + Iteration + "/" + numberOfTimes + " (" + ((double)Iteration / numberOfTimes * 100).ToString("0.00") + "%) - The player 2 wins the game ");
                             BestNetwork = AIplayer2;
                             mutateAmount = 1-certaintyPlayer1;
                         break;
                     case Players.NONE:
-                        Console.WriteLine("Iteration: " + Iteration + "/" + numberOfTimes + " - The game is NULL");
+                        Console.WriteLine("Iteration: " + Iteration + "/" + numberOfTimes + " (" + ((double)Iteration / numberOfTimes * 100).ToString("0.00") + "%) - The game is NULL");
                         break;
                 }
                 Iteration++;
