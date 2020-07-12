@@ -7,3 +7,12 @@ E:\AI\NeuralXOR\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.Assembly
 E:\AI\NeuralXOR\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.csproj.CoreCompileInputs.cache
 E:\AI\NeuralXOR\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.dll
 E:\AI\NeuralXOR\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.pdb
+C:\Users\vince\Documents\Programmation\TicTacToeAI\TicTacToeEngine\bin\Debug\netcoreapp3.1\TicTacToeEngine.deps.json
+C:\Users\vince\Documents\Programmation\TicTacToeAI\TicTacToeEngine\bin\Debug\netcoreapp3.1\TicTacToeEngine.dll
+C:\Users\vince\Documents\Programmation\TicTacToeAI\TicTacToeEngine\bin\Debug\netcoreapp3.1\TicTacToeEngine.pdb
+C:\Users\vince\Documents\Programmation\TicTacToeAI\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.csprojAssemblyReference.cache
+C:\Users\vince\Documents\Programmation\TicTacToeAI\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.AssemblyInfoInputs.cache
+C:\Users\vince\Documents\Programmation\TicTacToeAI\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.AssemblyInfo.cs
+C:\Users\vince\Documents\Programmation\TicTacToeAI\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.csproj.CoreCompileInputs.cache
+C:\Users\vince\Documents\Programmation\TicTacToeAI\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.dll
+C:\Users\vince\Documents\Programmation\TicTacToeAI\TicTacToeEngine\obj\Debug\netcoreapp3.1\TicTacToeEngine.pdb

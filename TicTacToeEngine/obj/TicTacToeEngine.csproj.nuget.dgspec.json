@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\AI\\NeuralXOR\\TicTacToeEngine\\TicTacToeEngine.csproj": {}
+    "C:\\Users\\vince\\Documents\\Programmation\\TicTacToeAI\\TicTacToeEngine\\TicTacToeEngine.csproj": {}
   },
   "projects": {
-    "E:\\AI\\NeuralXOR\\TicTacToeEngine\\TicTacToeEngine.csproj": {
+    "C:\\Users\\vince\\Documents\\Programmation\\TicTacToeAI\\TicTacToeEngine\\TicTacToeEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\AI\\NeuralXOR\\TicTacToeEngine\\TicTacToeEngine.csproj",
+        "projectUniqueName": "C:\\Users\\vince\\Documents\\Programmation\\TicTacToeAI\\TicTacToeEngine\\TicTacToeEngine.csproj",
         "projectName": "TicTacToeEngine",
-        "projectPath": "E:\\AI\\NeuralXOR\\TicTacToeEngine\\TicTacToeEngine.csproj",
+        "projectPath": "C:\\Users\\vince\\Documents\\Programmation\\TicTacToeAI\\TicTacToeEngine\\TicTacToeEngine.csproj",
         "packagesPath": "C:\\Users\\vince\\.nuget\\packages\\",
-        "outputPath": "E:\\AI\\NeuralXOR\\TicTacToeEngine\\obj\\",
+        "outputPath": "C:\\Users\\vince\\Documents\\Programmation\\TicTacToeAI\\TicTacToeEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

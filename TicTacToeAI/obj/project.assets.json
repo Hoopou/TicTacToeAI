@@ -75,11 +75,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\AI\\NeuralXOR\\TicTacToeAI\\TicTacToeAI.csproj",
+      "projectUniqueName": "C:\\Users\\vince\\Documents\\Programmation\\TicTacToeAI\\TicTacToeAI\\TicTacToeAI.csproj",
       "projectName": "TicTacToeAI",
-      "projectPath": "E:\\AI\\NeuralXOR\\TicTacToeAI\\TicTacToeAI.csproj",
+      "projectPath": "C:\\Users\\vince\\Documents\\Programmation\\TicTacToeAI\\TicTacToeAI\\TicTacToeAI.csproj",
       "packagesPath": "C:\\Users\\vince\\.nuget\\packages\\",
-      "outputPath": "E:\\AI\\NeuralXOR\\TicTacToeAI\\obj\\",
+      "outputPath": "C:\\Users\\vince\\Documents\\Programmation\\TicTacToeAI\\TicTacToeAI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -101,8 +101,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\AI\\NeuralXOR\\TicTacToeEngine\\TicTacToeEngine.csproj": {
-              "projectPath": "E:\\AI\\NeuralXOR\\TicTacToeEngine\\TicTacToeEngine.csproj"
+            "C:\\Users\\vince\\Documents\\Programmation\\TicTacToeAI\\TicTacToeEngine\\TicTacToeEngine.csproj": {
+              "projectPath": "C:\\Users\\vince\\Documents\\Programmation\\TicTacToeAI\\TicTacToeEngine\\TicTacToeEngine.csproj"
             }
           }
         }

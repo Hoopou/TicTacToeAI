@@ -111,9 +111,6 @@ namespace TicTacToeAI
         {
             int Iteration = 0; // Current Training Iteration
 
-            double mutateAmount = 0.3;
-
-
 
             while (Iteration <= numberOfTimes) // Keep Training untill the number of times is reached
             {               
@@ -127,7 +124,7 @@ namespace TicTacToeAI
                 var certaintyPlayer2 = 0.0;
 
                 //AIplayer1.Mutate();
-                AIplayer2.Mutate(mutateAmount, 2*mutateAmount);
+                AIplayer2.Mutate();
 
                 while (!game.IsGameFinished())
                 {
@@ -149,13 +146,11 @@ namespace TicTacToeAI
                 {
                     case Players.Player1:
                             Console.WriteLine("Iteration: " + Iteration + "/"+ numberOfTimes+" (" + ((double)Iteration/numberOfTimes*100).ToString("0.00") + "%) - The player 1 wins the game ");
-                            //BestNetwork = AIplayer1;
-                            mutateAmount = 1 - certaintyPlayer2;
+                            BestNetwork = AIplayer1;
                         break;
                     case Players.Player2:
                             Console.WriteLine("Iteration: " + Iteration + "/" + numberOfTimes + " (" + ((double)Iteration / numberOfTimes * 100).ToString("0.00") + "%) - The player 2 wins the game ");
                             BestNetwork = AIplayer2;
-                            mutateAmount = 1-certaintyPlayer1;
                         break;
                     case Players.NONE:
                         Console.WriteLine("Iteration: " + Iteration + "/" + numberOfTimes + " (" + ((double)Iteration / numberOfTimes * 100).ToString("0.00") + "%) - The game is NULL");
